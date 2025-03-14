@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class First{
-     static int Power(int z){
+    static int Power(int z){
         int p=1;
         for (int i=0;i<z;i++){
             p*=10;
@@ -16,22 +16,15 @@ class First{
         }
         return count;
     }
-    static int Sub( int a){
-        int count=Count(a)/2;
-        return count;
-    }
-    static void Mid(int x, int y){
-        int back=x%Power(Sub(x));
-        int front=x/Power(Sub(x));
-        int half=front*Power(Count(y))+y;
-        int result=half*Power(Count(back))+back;
-        System.out.println(result);
+    static void Add(int x, int y){
+        y=(y * Power(Count(x)))+x;
+        System.out.println(y);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number n and m");
         int n = in.nextInt();
         int m = in.nextInt();
-        Mid(n,m);
+        Add(n,m);
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class Adding_at_front_bymethod{
      static int Power(int z){
         int p=1;
         for (int i=0;i<z;i++){
@@ -16,15 +16,15 @@ class First{
         }
         return count;
     }
-    static int Sub( int a){
-        int count=Count(a)/2;
+    static int Sub(int a, int b){
+        int count1=Count(a);
+        int count2=Count(b);
+        int count=count1-count2;
         return count;
     }
-    static void Mid(int x, int y){
-        int back=x%Power(Sub(x));
-        int front=x/Power(Sub(x));
-        int half=front*Power(Count(y))+y;
-        int result=half*Power(Count(back))+back;
+    static void Remove(int x, int y){
+        int z=x%Power(Sub(x,y));
+        int result=(y*Power(Count(z)))+z;
         System.out.println(result);
     }
     public static void main(String[] args) {
@@ -32,6 +32,6 @@ class First{
         System.out.println("Enter the number n and m");
         int n = in.nextInt();
         int m = in.nextInt();
-        Mid(n,m);
+        Remove(n,m);
     }
 }

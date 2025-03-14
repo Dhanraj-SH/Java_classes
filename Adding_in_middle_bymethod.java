@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class Adding_in_middle_bymethod{
      static int Power(int z){
         int p=1;
         for (int i=0;i<z;i++){
@@ -16,7 +16,7 @@ class First{
         }
         return count;
     }
-    static int Sub( int a){
+    static int Sub(int a){
         int count=Count(a)/2;
         return count;
     }
