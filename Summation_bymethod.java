@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class Summation_bymethod{
 
     static void Digit(int x){
         int sum =0;

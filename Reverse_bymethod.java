@@ -1,22 +1,19 @@
 import java.util.Scanner;
 
-class First{
-
-    static void Digit(int x){
-        int sum =0;
+class Reverse_bymethod{
+    static void Reverse(int x){
+        int reverse=0;
         while(x>0){
             int rem = x %10;
-            x/=10;
-            for (int i=1; i<=rem ;i++){
-                sum=sum+i;
-            }
+            x=x/10;
+            reverse=reverse*10+rem;
         }
-        System.out.println(sum);
+        System.out.println(reverse);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number n ");
         int n = in.nextInt();
-        Digit(n);
+        Reverse(n);
     }
 }

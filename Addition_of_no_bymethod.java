@@ -1,22 +1,19 @@
 import java.util.Scanner;
 
-class First{
-
-    static void Digit(int x){
-        int sum =0;
+class Addition_of_no_bymethod{
+    static int Digit(int x){
+        int sum=0;
         while(x>0){
-            int rem = x %10;
+            int rem= x%10;
             x/=10;
-            for (int i=1; i<=rem ;i++){
-                sum=sum+i;
-            }
+            sum=sum+rem;
         }
-        System.out.println(sum);
+        return sum;
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number n ");
         int n = in.nextInt();
-        Digit(n);
+        System.out.println(Digit(n));
     }
 }
