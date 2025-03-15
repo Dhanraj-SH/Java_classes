@@ -1,21 +1,20 @@
 import java.util.Scanner;
 
-class First{
+class Sum_of_factorial{
 
     static void Digit(int x){
-        int rem,answer=0;
-        do {
-            answer=0;
-            while(x>0){
-            rem= x%10;
-            x=x/10;
-            answer=answer+rem;
+        int temp=0;
+        while(x>0){
+            int rem = x %10;
+            x/=10;
+            int sum =1;
+            for (int i=1; i<=rem ;i++){
+                sum=sum*i;
             }
-            x=answer;
-        }while(answer>9);
-        System.out.println(answer);
+            temp=temp+sum;
+        }
+        System.out.println(temp);
     }
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number n ");

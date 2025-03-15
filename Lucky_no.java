@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class Lucky_no{
 
     static void Digit(int x){
         int rem,answer=0;
