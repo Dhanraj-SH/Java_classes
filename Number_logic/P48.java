@@ -1,21 +1,20 @@
 import java.util.Scanner;
 
-class First{
-    static  int Count( int x){
-        int count =0;
-        while (x>0) { 
-            if(x%2==1){
-                count++;
-            }
-            x/=2;
+class P48{
+    static int  Palindrome(int a){
+        int rev=0;
+        while(a>0){
+            int rem=a%10;
+            a/=10;
+            rev=rev*10+rem;
         }
-        return count;
+        return rev;
     }
 
     static void Digit(int x){
         for (int i=1;i<=x;i++){
-            int count= Count(i);
-            if(count%2==0){
+            int z= Palindrome(i);
+            if(z==i){
                 System.out.println(i);
             }
         }

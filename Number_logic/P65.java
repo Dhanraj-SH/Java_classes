@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P65{
     static  int Count( int x){
         int count =0;
         while (x>0) { 

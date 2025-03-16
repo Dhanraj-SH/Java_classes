@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-class P20{
-    static void Digit(int x){
+class P39{
+
+    static int Magic(int x){
         int rem,answer=0;
-        int y=x;
         do {
             answer=0;
             while(x>0){
@@ -14,18 +14,25 @@ class P20{
             x=answer;
         }while(answer>9);
         if(answer==1){
-            System.out.println(y+" is a Magic number");
+            return 1;
         }
-        else{
-            System.out.println(y+" is not a magic number");
+        return 0;
+    }
+
+    static void Digit(int x,int y){
+        for (int i=x;i<=y;i++){
+        int r= Magic(i);
+         if(r==1){
+            System.out.println(i);
+        }
         }
     }
 
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the number  :");
+        System.out.println("Enter the range from and to  :");
         int x = in.nextInt();
-        Digit(x);
+        int y = in.nextInt();
+        Digit(x,y);
     }
 }

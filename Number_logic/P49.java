@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-class First{
-    static  int Count( int x){
-        int count =0;
-        while (x>0) { 
-            if(x%2==1){
+class P49{
+    static int Prime(int n){
+        int count=0;
+        for (int i =2; i*i<=n;i++) {
+            if(n%i==0){
                 count++;
+                break;
             }
-            x/=2;
         }
         return count;
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
-            int count= Count(i);
-            if(count%2==0){
+        for (int i=2;i<=x;i++){
+            int z= Prime(i);
+            if(z==0){
                 System.out.println(i);
             }
         }

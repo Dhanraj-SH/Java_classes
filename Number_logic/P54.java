@@ -1,25 +1,24 @@
 import java.util.Scanner;
 
-class First{
-    static  int Count( int x){
-        int count =0;
-        while (x>0) { 
-            if(x%2==1){
-                count++;
-            }
-            x/=2;
+class P54{
+    static int Sum(int x){
+        int res=0;
+        while(x>0){
+            int rem = x%10;
+            x=x/10;
+            res=res+rem;
         }
-        return count;
+        return res;
     }
 
     static void Digit(int x){
         for (int i=1;i<=x;i++){
-            int count= Count(i);
-            if(count%2==0){
-                System.out.println(i);
-            }
+        int r= Sum(i);
+         if(i%r==0){
+            System.out.println(i);
         }
-    }
+        }
+    } 
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

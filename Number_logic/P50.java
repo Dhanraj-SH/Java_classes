@@ -1,21 +1,32 @@
 import java.util.Scanner;
 
-class First{
-    static  int Count( int x){
-        int count =0;
-        while (x>0) { 
-            if(x%2==1){
-                count++;
+class P50{
+        static int Power(int n){
+        int x=0;
+        for(int i=1;i<=n;i++){
+            x = i*i;
+        }
+        return x;
+    }
+
+    static int Square(int n){
+        int x=1,y=1,count=0;
+        while(y<=n){
+            if(y==n){
+                count ++;
+                break;
             }
-            x/=2;
+            x++;
+            y=Power(x);
         }
         return count;
     }
 
+
     static void Digit(int x){
         for (int i=1;i<=x;i++){
-            int count= Count(i);
-            if(count%2==0){
+            int z= Square(i);
+            if(z==1){
                 System.out.println(i);
             }
         }

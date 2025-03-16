@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P47{
     static  int Count( int x){
         int count =0;
         while (x>0) { 
@@ -12,8 +12,8 @@ class First{
         return count;
     }
 
-    static void Digit(int x){
-        for (int i=1;i<=x;i++){
+    static void Digit(int x,int y){
+        for (int i=x;i<=y;i++){
             int count= Count(i);
             if(count%2==0){
                 System.out.println(i);
@@ -23,8 +23,9 @@ class First{
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the nth range  :");
+        System.out.println("Enter the range from and to  :");
         int x = in.nextInt();
-        Digit(x);
+        int y = in.nextInt();
+        Digit(x,y);
     }
 }
