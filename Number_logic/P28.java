@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P28{
 
     static int Cube(int x){
         int res=1;
