@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P75{
     static void Find(int x){
         int count=0,count1=0;
         while(x>0){

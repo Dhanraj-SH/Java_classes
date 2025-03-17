@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class P64{
-        static int Cube(int x){
+    static int Cube(int x){
         int res=1;
         for(int i=0;i<3;i++){
             res=res*x;
@@ -27,13 +27,16 @@ class P64{
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
+        int count=x,i=0;
+        while(count>0){
+            i++;
             int z = Cube(i);
             int res=z%Power(Count(i));
             if(res == i){
-                System.out.println(i);
+                count--;
             }
         }
+        System.out.println(i);
     }
 
     public static void main(String[] args) {

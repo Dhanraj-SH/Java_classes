@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class P59{
-    static int Multiply(int x){
+        static int Multiply(int x){
         int res=1;
         while(x>0){
             int rem= x%10;
@@ -22,13 +22,16 @@ class P59{
     }
     
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
-        int r=Sum(i);
-        int s=Multiply(i);
-        if(s==r){
-            System.out.println(i);
+        int count=x,i=0;
+        while(count>0){
+            i++;
+            int r=Sum(i);
+            int s=Multiply(i);
+            if(s==r){
+                count--;
+            }
         }
-        }
+        System.out.println(i);
     }
 
     public static void main(String[] args) {

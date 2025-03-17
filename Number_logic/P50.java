@@ -24,12 +24,15 @@ class P50{
 
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
+        int count=x,i=0;
+        while(count>0){
+            i++;
             int z= Square(i);
             if(z==1){
-                System.out.println(i);
+                count--;
             }
         }
+        System.out.println(i);
     }
 
     public static void main(String[] args) {

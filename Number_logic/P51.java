@@ -19,8 +19,9 @@ class P51{
     }
 
     static void Digit(int x){
-        for (int i=0;i<=x;i++){
-            int k=i,j=i;
+        int flag=x,i=0;
+        while(flag>0){
+            int k=i;
             int count= Count(i);
             int r=0;
             while(k>0){
@@ -28,10 +29,12 @@ class P51{
                 k/=10;
                 r=r+Power(rem,count);
             }
-            if(r==j){
-                System.out.println(r);
+            if(r==i){
+                flag--;
             }
+            i++;
         }
+        System.out.println(i-1);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

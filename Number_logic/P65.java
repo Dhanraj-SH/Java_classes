@@ -13,12 +13,15 @@ class P65{
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
+        int flag=x,i=0;
+        while(flag<0){
+            i++;
             int count= Count(i);
             if(count%2==0){
-                System.out.println(i);
+                flag--;
             }
         }
+        System.out.println(i);
     }
 
     public static void main(String[] args) {

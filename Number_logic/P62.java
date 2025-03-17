@@ -19,7 +19,9 @@ class P62{
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
+        int flag=x,i=0;
+        while(flag>0){
+            i++;
             int count=0,res=0;
             int z=Reverse(i);
             while(z>0){
@@ -29,10 +31,12 @@ class P62{
                 res=res+Square(rem, count);
             }
             if(i==res){
-                System.out.println(i);
+                flag--;
             }
         }
+        System.out.println(i);
     }
+
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

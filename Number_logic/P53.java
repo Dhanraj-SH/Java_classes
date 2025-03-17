@@ -13,12 +13,15 @@ class P53{
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
+        int count=x,i=0;
+        while(count>0){
+            i++;
             int r=Prefect(i);
             if(r==i){
-                System.out.println(i);
+                count--;
             }
         }
+        System.out.println(i);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

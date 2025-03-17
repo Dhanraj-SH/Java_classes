@@ -13,12 +13,15 @@ static int Abundant(int x){
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
-        int r= Abundant(i);
-         if(r>i){
-            System.out.println(i);
+        int count=x,i=0;
+        while(count>0){
+            i++;
+            int r= Abundant(i);
+            if(r>i){
+                count--;
+            }
         }
-        }
+        System.out.println(i);
     }
 
 

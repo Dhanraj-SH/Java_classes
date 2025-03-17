@@ -11,7 +11,9 @@ class P52{
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
+        int count=x,i=0;
+        while(count>0){
+            i++;
             int k=i,j=i;
             int r=0;
             while(k>0){
@@ -20,9 +22,10 @@ class P52{
                 r=r+Fact(rem);
             }
             if(r==j){
-                System.out.println(r);
+                count--;
             }
         }
+        System.out.println(i);
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

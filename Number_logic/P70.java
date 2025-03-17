@@ -1,22 +1,19 @@
 import java.util.Scanner;
 
-class First{
-    static void Find(int x){
-        int count=0,count1=0;
+class P70{
+    static int Find(int x){
+        int temp=0;
         while(x>0){
             int rem= x%10;
             x/=10;
-            if(rem%2==0){
-                count++;
-            }
-            else{
-                count1++;
+            if(rem>temp){
+                temp = rem;
             }
         }
-    System.out.println(count +" Even "+count1+" Odd");
+    return temp;
     }
     static void Digit(int x){
-        Find(x);
+        System.out.println(Find(x));
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

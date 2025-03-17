@@ -17,12 +17,15 @@ class P58{
     }
 
     static void Digit(int x){
-        for (int i=1;i<=x;i++){
-        int r=Sum(Square(i));
-        if(i==r){
-            System.out.println(i);
+        int count=x,i=0;
+        while(count>0){
+            i++;
+            int r=Sum(Square(i));
+            if(i==r){
+                count--;
+            }
         }
-        }
+        System.out.println(i);
     }
 
     public static void main(String[] args) {
