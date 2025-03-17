@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P92{
     static int Cube(int x){
         return x*x*x;
     }
