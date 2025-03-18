@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-class First{
+class Binary_to_decimal{
     static int Power(int x){
         int res=1;
         while(x>0){
-            res=res*10;
+            res=res*2;
             x--;
         }
         return res;
@@ -14,8 +14,8 @@ class First{
         int y=0;
         int res=0;
         while(x>0){
-            int rem=x%8;
-            x=x/8;
+            int rem=x%10;
+            x=x/10;
             res=res+(Power(y)*rem);
             y++;
         }

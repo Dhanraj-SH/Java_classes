@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P66{
     static int Reverse(int x, int res) {
         if (x == 0) {
             return res;

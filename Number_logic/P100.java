@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class P100{
     static int Prime(int n){
         for (int i =2; i*i<=n;i++) {
             if(n%i==0){

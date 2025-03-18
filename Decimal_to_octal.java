@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class Decimal_to_octal{
     static int Power(int x){
         int res=1;
         while(x>0){

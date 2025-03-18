@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class First{
+class Decimal_tobinary{
     static int Power(int x){
         int res=1;
         while(x>0){
@@ -14,8 +14,8 @@ class First{
         int y=0;
         int res=0;
         while(x>0){
-            int rem=x%8;
-            x=x/8;
+            int rem=x%2;
+            x=x/2;
             res=res+(Power(y)*rem);
             y++;
         }
