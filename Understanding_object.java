@@ -1,5 +1,5 @@
 
-class First{
+class Understanding_object{
     int x=10;
     static int y=20;
     void Digit(int n){

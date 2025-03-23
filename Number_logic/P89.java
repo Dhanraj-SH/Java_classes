@@ -1,17 +1,22 @@
 import java.util.Scanner;
 
 class P89{
-    static int Duck(int x){
-        int flag=0;
-        while(x>0){
-            if(x%10==0){
-                flag=1;
-            }
-            x/=10;
+    static int Duck(String x){
+        if(x.charAt(0)=='0'){
+            return 0;
         }
-        return flag;
+        else{
+            int n= Integer.parseInt(x);
+            while(n>0){
+                if(n%10==0){
+                    return 1;
+                }
+                n/=10;
+            }
+        }
+        return 0;
     }
-    static void Digit(int x){
+    static void Digit(String x){
         int f= Duck(x);
         if(f==1){
             System.out.println(x+" is a Duck number");
@@ -23,7 +28,7 @@ class P89{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the n  :");
-        int x = in.nextInt();
+        String x = in.next();
         Digit(x);
     }
 }
