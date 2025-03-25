@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-class First{
+class P96{
 
 static void Printit( int x){
     for(int i=0;i<x;i++){

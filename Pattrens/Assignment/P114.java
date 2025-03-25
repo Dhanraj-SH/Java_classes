@@ -1,13 +1,13 @@
 
 import java.util.Scanner;
 
-class First{
+class P114{
 
 static void Printit( int x){
     for(int i=0;i<x;i++){
-        for(int j=0;j<8*x;j++){
-            if(i+j==x-1||i-j==-(x-1)||i+j==3*(x-1)||i-j==-3*(x-1)||i+j==5*(x-1)||i-j==-5*(x-1)||i+j==7*(x-1)||i-j==-7*(x-1)){
-                System.out.print("* ");
+        for(int j=0;j<x;j++){
+            if(i+j>=(x/2)&&i-j>=-(x/2)&&i+j<=3*(x/2)&&i-j<=(x/2)){
+                System.out.print((i==x/2&&j==x/2?'0':'*')+" ");
             }    
             else{
                 System.out.print("  ");
