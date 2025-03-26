@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-class First{
+class P89{
 
 static void Printit( int x){
 

@@ -1,18 +1,18 @@
 
 import java.util.Scanner;
 
-class First{
+class P46{
 
 static void Printit( int x){
 
         for(int i=0;i<x;i++){
-            for(int j=0;j<x;j++){ 
-                if(i>=x/4&&(i+j==3*(x/2))||(i-j==-(x/2)&&i<=3*(x/4)||(i==x/2))){
-                    System.out.print("* ");
+            for(int j=0;j<(2*x)-1;j++){ 
+                if(i+j>=(2*(x-1))||i-j>=0){
+                    System.out.print("  * ");
                 }    
                 else{
-                    System.out.print("  ");
-                }     
+                    System.out.print("   ");
+                }      
             }
             System.out.println();
         }

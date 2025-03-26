@@ -1,13 +1,13 @@
 
 import java.util.Scanner;
 
-class First{
+class P88{
 
 static void Printit( int x){
 
         for(int i=0;i<x;i++){
             for(int j=0;j<x;j++){ 
-                if(i>=x/4&&(i+j==3*(x/2))||(i-j==-(x/2)&&i<=3*(x/4)||(i==x/2))){
+                if(i==x/2||j==x/2||i-j==-x/2||i-j==x/2||i+j==x/2||i+j==3*(x/2)){
                     System.out.print("* ");
                 }    
                 else{
